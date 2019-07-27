@@ -8,7 +8,7 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
-from stock_methods import add_action
+from stock_methods import add_stock
 
 
 # If modifying these scopes, delete the file token.pickle.
@@ -50,4 +50,4 @@ def main():
 if __name__ == '__main__':
     service = main()
     # Examples:
-    # add_action(service, 'A1', stock_cod='GOGL34', exchange='BVMF')
+    # add_stock(service, 'A1', stock_cod='GOGL34', exchange='BVMF')
